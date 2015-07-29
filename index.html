@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>JSON object creation</h2>
+
+<p id='demo'></p>
+<div id="id01"></div>
+
+<script> 
+var text = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}';
+
+//var obj = JSON.parse(text);
+var obj = eval ('(' + text + ')');
+
+obj['name'] = 'ggg';
+document.getElementById('demo').innerHTML =
+obj['name'] + '<br>' +
+obj.street + '<br>' +
+obj.phone;
+</script>
+<script src="main.js"></script>
+<script src="functions.js"></script>
+</body>
+</html>
