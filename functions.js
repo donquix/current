@@ -4,7 +4,7 @@ function myFunction(arr) {
     for(i = 0; i < arr.length; i++) {
         out += '<a href="' + arr[i].url + '">' + arr[i].display + '</a><br>';
     }
-    document.getElementById("demo").innerHTML = out;
+    document.getElementById("demo1").innerHTML = out;
 }
 
 function myFunction1(arr) {
